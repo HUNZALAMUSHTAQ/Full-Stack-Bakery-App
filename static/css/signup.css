@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+.signup{
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  border-radius: 0.2rem;
+
+}
+
+h2{
+  padding-top: 1.5rem;
+}
+
+/* a:hover{
+  color: #da5767;
+  text-decoration: none;
+} */
+
+/* .form-control{
+  background-color: #f8f9fa;
+  padding: 10px;
+  padding: 10px 5px;
+  margin-bottom: 1rem;
+}
+
+.form-control:focus {
+
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+
+} */
+.heading{
+    text-align: center;
+    font-weight: 800;
+}
+
+.sigin-btn{
+    align-items: center;
+  padding: 0.2rem 0.8rem;
+  background: rgb(74, 74, 148);
+  border: 1px rgb(70, 70, 139);
+  border-radius: 0.4rem;
+}
+.sigin-btn:hover {
+
+    
+    background-color: #df8c96;
+    border-color: #df8c96;
+  transition: .3s;
+
+} 

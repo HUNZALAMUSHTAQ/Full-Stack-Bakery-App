@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container ">
+    <div class="p-4 m-4 ">
+        <div class="col-lg-5 mx-auto signup">
+            <h3 class="heading">Sign In</h3>
+            {% if state %}
+            <div class="alert alert-danger" role="alert">
+                {{message}}
+            </div>
+            {% endif %}
+            <form action="" method="POST">
+
+                <div class="form-group">
+                    {% csrf_token %}
+                    <label for="Email">Email </label>
+                    <input type="text" name="email" id="" class="form-control form-control-sm"
+                        aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password </label>
+                    <input type="password" name="password" id="" class="form-control form-control-sm"
+                        placeholder="*********" aria-describedby="helpId">
+                </div>
+                <div class="form-group d-flex flex-row align-items-center justify-content-between">
+                    <a href="{% url 'signup' %}">Sign up</a>
+                    
+                    <input type="submit" value="Sign In " class="btn btn-primary sigin-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
